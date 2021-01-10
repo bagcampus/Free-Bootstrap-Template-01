@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- favi-->
+    <link rel="icon" href="images/fav.png" type="image/png" sizes="16x16">
+    
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <script src="script/jquery.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/article.css">
+</head>
+<body>
+        <section id="navbar" class="fixed-top">
+            <div >
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" onscroll="nav()">
+                        <a class="navbar-brand text-white" href="#">Navbar</a>
+                
+                        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <div class="mr-auto"></div>
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                </li>
+                
+                                <!-- Button trigger modal -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" data-toggle="modal" data-target="#login">
+                                        Login
+                                    </a>
+                                </li>
+                
+                                <!-- Button trigger modal -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" data-toggle="modal" data-target="#register">
+                                        Register
+                                    </a>
+                                </li>
+                
+                
+                            </ul>
+                        </div>
+                    </nav>
+                
+                </div>
+            </div>
+            
+        </section>
+
+        
+        <section class="my-5" id="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="">
+                            <h1 class="my-5 text-capitalize">
+                                Send Message Us
+                            </h1>
+                            <img class="card-img-top" src="https://images.unsplash.com/photo-1602859452615-a50cea8834fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3456&q=80" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="lead">Some quick example text to build on the card title and make up the bulk of the card's
+                                    content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                            <h2 class="my-5 text-capitalize">
+                                Send Message Us
+                            </h2>
+                            <!-- -->
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    Featured
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    2 days ago
+                                </div>
+                            </div>
+
+                            <!---->
+                            <div class="card my-1 text-center" style="width: 18rem;">
+                                <img class="card-img" src="https://source.unsplash.com/1600x1200/?nature,water" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                        content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+
+                            <!-- -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal login -->
+        <div class="modal fade" id="login" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content spl-bt">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                    placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                    else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal register -->
+        <div class="modal fade" id="register" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true" role="dialog">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content spl-bt">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Register</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+        
+        
+                        <div class="form my-5" id="form">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputfname4">First Name</label>
+                                        <input type="text" class="form-control" id="inputfname4" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputlname4">Last Name</label>
+                                        <input type="text" class="form-control" id="inputlname4">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputEmail4">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail4">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputcontact4">Contact</label>
+                                        <input type="contact" class="form-control" id="inputcontact4">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAddress">Address</label>
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputCity">City</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputState">State</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            Check me out
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary text-capitalize">contact us</button>
+                            </form>
+                        </div>
+        
+        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+
+
+/* header */
+.nav-link:hover{
+    background: -webkit-linear-gradient(left, #1d3ede, #01e6f8);
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    background: -ms-linear-gradient(left, #1d3ede, #01e6f8);
+    background: -moz-linear-gradient(left, #1d3ede, #01e6f8);
+    background: -o-linear-gradient(left, #1d3ede, #01e6f8);
+    -o-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
+}
+
+
+#header{
+    width: 100%;
+    background: url('../images/bg.jpeg') no-repeat fixed center;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 100px;
+    margin-bottom: 10px;
+}
+
+.gtco-banner-area h1 {
+    font-family: cursive;
+    font-size: 48px; 
+    font-weight: 700;
+    color: #ffffff;
+    max-width: 500px;
+    margin-top: 60px;
+}
+
+.card .card-img-top {
+    max-width: 430px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+    #header .card{
+        display: none;
+    }
+}
+
+.gtco-banner-area p {
+    max-width: 450px;
+    margin: 20px 0;
+    margin-bottom: 40px;
+}
+
+.gtco-banner-area p {
+    color: #f8f9fa;
+    font-size: 18px;
+}
+
+.gtco-banner-area a, #tabs li .active, .spl-bt {
+    display: inline;
+    padding: 10px 30px;
+    background-image: -webkit-linear-gradient(0deg, #393c8b 0%, #3569d6 100%);
+    font-size: 18px;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none !important;
+}
+
+/* carousel */
+
+#main{
+    padding-top: 20px;
+    margin-top: 50px;
+}
+
+.gtco-news h2 {
+    font-size: 36px;
+    font-weight: "Lato-Medium";
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/* tabs */
+.title_a {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:#1e1e1e;
+}
+
+
+/* contact #contact */
+
+.title-left {
+    font-size: 2rem;
+    position: relative;
+}
+
+.title-box-2 .title-left:before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    bottom: -12px;
+}
+
+/* modal */
+.modal-body {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3563cede; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3564ce; 
+}
+
+/* */
+
+.whatsapp {
+    position: fixed;
+    display: inline;
+    bottom: 15px;
+    background: #2e414d00;
+    position: fixed;
+    color: #fff;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 50%;
+    left: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 11;
+}
